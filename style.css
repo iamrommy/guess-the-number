@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #2b2a33;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    overflow-x: auto;
+}
+
+.container {
+    width: min(90%, 31.25em);
+    min-width: 300px;
+    background-color: #e5e5e5;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2em;
+    color: #303030;
+}
+
+.input-wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 2.5fr;
+    gap: 1em;
+    margin: 3em auto 1.5em auto;
+}
+
+input[type="number"] {
+    background: #eee;
+    width: 100%;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid #adaeae;
+    border-radius: 0.3em;
+    outline: none;
+    appearance: text-field;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+    border-color: #ef233c;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1.2em; /* Adjust padding for better spacing */
+    background: linear-gradient(135deg, #ef233c, #d90429); /* Gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 15px rgba(239, 35, 60, 0.4); /* Soft shadow */
+    text-transform: uppercase; /* Capitalize text */
+    letter-spacing: 0.05em; /* Adjust spacing between letters */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d90429, #ef233c); /* Reverse gradient on hover */
+    box-shadow: 0 6px 20px rgba(239, 35, 60, 0.6); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+butt
+
+
+#restart {
+    margin: 0 auto 0 auto;
+    padding: 0.8em 1em;
+    display: none;
+}
+
+.result {
+    margin-top: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #565b70;
+    word-break: break-all;
+}
+
+.error,
+.success {
+    padding: 0.5em 0;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    animation: pop 0.4s forwards;
+    transform: scale(0);
+}
+
+.error {
+    background-color: #ffcbcb;
+    color: #ff3e3e;
+}
+
+.success {
+    background-color: #b9ffd5;
+    color: #05c451;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
